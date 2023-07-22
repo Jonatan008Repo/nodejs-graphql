@@ -1,0 +1,30 @@
+#graphql
+
+type Query {
+  hello: String!
+  getPerson(name: String!, age: Int!): String!
+  getInt: Int!
+  getFloat: Float!
+  getBoolean: Boolean!
+  getID: ID!
+  product(id: ID!): Product
+  products: [Product!]!
+}
+
+type Product {
+  id: ID!
+  name: String!
+  price: Float!
+  description: String!
+  image: String!
+  createdAt: String!
+}
+
+#GET = QUERY
+#POST, PUT, DELTE = Mutations
+#POST = 201
+#POST = CREATE = 201
+#GET = GET DATA
+#PUT = UPDATE
+#DELETE = REMOVE
+#LISTS
